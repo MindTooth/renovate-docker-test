@@ -1,5 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", ":label(renovate)", ":timezone(Europe/Oslo)"],
-  "enabledManagers": ["docker-compose", "dockerfile"]
+  "enabledManagers": ["docker-compose", "dockerfile"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["pglombardo/pwpush-ephemeral"],
+      "customChangelogUrl": "https://github.com/pglombardo/PasswordPusher"
+    }
+  ]
 }
