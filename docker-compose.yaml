@@ -1,4 +1,4 @@
 ---
 services:
   renovate:
-    image: renovate/renovate:35.105.5
+    image: pglombardo/pwpush-ephemeral:1.11.11
