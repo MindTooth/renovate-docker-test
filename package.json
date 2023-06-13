@@ -2,6 +2,6 @@
   "name": "renovate-docker-test",
   "version": "0.0.1",
   "dependencies": {
-    "renovate": "^35.105.5"
+    "renovate": "35.105.5"
   }
 }
