@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", ":label(renovate)", ":timezone(Europe/Oslo)"],
-  "enabledManagers": ["docker-compose", "dockerfile", "npm"],
+  "enabledManagers": ["dockerfile"],
   "docker": {
     "pinDigests": true
   },
