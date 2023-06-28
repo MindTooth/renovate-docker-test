@@ -4,11 +4,5 @@
   "enabledManagers": ["dockerfile"],
   "docker": {
     "pinDigests": true
-  },
-  "packageRules": [
-    {
-      "matchPackageNames": ["pglombardo/pwpush-ephemeral"],
-      "customChangelogUrl": "https://github.com/pglombardo/PasswordPusher"
-    }
-  ]
+  }
 }
