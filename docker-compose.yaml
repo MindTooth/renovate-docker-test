@@ -1,4 +1,4 @@
 ---
 services:
   renovate:
-    image: pglombardo/pwpush-ephemeral:1.11.11
+    image: pglombardo/pwpush-ephemeral:1.11.1
