@@ -4,5 +4,14 @@
   "enabledManagers": ["dockerfile"],
   "docker": {
     "pinDigests": true
-  }
+  },
+  "regexManagers": [
+    {
+      "fileMatch": ["Containerfile$"],
+      "matchStrings": ["ARG VERSION=\"(?<currentDigest>.*?)\""],
+      "depNameTemplate": "eclipse-chariott/chariott",
+      "currentValueTemplate": "main",
+      "datasourceTemplate": "github-refs"
+    }
+  ]
 }
