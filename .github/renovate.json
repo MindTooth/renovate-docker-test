@@ -9,10 +9,10 @@
     {
       "fileMatch": ["^Containerfile$"],
       "matchStrings": ["ARG VERSION=\"(?<currentDigest>.*?)\"\\s"],
-      "packageNameTemplate": "eclipse-chariott/chariott",
-      "depNameTemplate": "https://github.com/eclipse-chariott/chariott/",
       "currentValueTemplate": "main",
-      "datasourceTemplate": "git-refs"
+      "datasourceTemplate": "git-refs",
+      "depNameTemplate": "eclipse-chariott/chariott",
+      "packageNameTemplate": "https://github.com/eclipse-chariott/chariott/"
     }
   ]
 }
