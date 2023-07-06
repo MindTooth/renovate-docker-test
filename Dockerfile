@@ -1,1 +1,1 @@
-FROM renovate/renovate:35.105.5
+FROM renovate/renovate:35.159.7@sha256:d745c59d95c953dbd133f73c347d5bf5e9e85fa7ab09019c926e5ebd0922833b
