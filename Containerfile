@@ -1,5 +1,5 @@
 # Containerfile for building Eclipse Chariott runtime container
-FROM registry.fedoraproject.org/fedora:39 as builder
+FROM registry.fedoraproject.org/fedora:39@sha256:1a756e3476ce5520226c7e0053a4d844a7f3e0d15c9910754ba59b81f1efc793 as builder
 ARG VERSION="e4b54b7ecec77933efad323351dfebe47fea7c2a"
 RUN dnf -y install rust cargo unzip cmake protobuf-devel
 ADD https://github.com/eclipse-chariott/chariott/archive/${VERSION}.zip /tmp/chariott.zip
@@ -8,7 +8,7 @@ WORKDIR /sdv
 RUN cargo build --release
 
 # Chariott Final Fedora Image
-FROM registry.fedoraproject.org/fedora:39
+FROM registry.fedoraproject.org/fedora:39@sha256:1a756e3476ce5520226c7e0053a4d844a7f3e0d15c9910754ba59b81f1efc793
 
 # Copy our build
 COPY --from=builder /sdv/target/release/chariott /usr/local/bin/chariott
