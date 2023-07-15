@@ -1,10 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":label(renovate)", ":timezone(Europe/Oslo)"],
+  "extends": [
+    "config:best-practices",
+    ":label(renovate)",
+    ":timezone(Europe/Berlin)",
+    ":automergeDigest"
+  ],
   "enabledManagers": ["dockerfile", "regex"],
-  "docker": {
-    "pinDigests": true
-  },
   "regexManagers": [
     {
       "fileMatch": ["^Containerfile$"],
