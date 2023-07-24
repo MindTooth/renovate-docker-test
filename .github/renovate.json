@@ -5,7 +5,7 @@
     ":label(renovate)",
     ":timezone(Europe/Berlin)",
     "schedule:automergeEarlyMondays",
-    ":automergeStableMinor"
+    ":automergeStableNonMajor"
   ],
   "enabledManagers": ["dockerfile"]
 }
