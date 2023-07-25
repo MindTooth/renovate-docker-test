@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
   "extends": [
     "config:best-practices",
     ":label(renovate)",
@@ -7,5 +8,13 @@
     "schedule:automergeEarlyMondays",
     ":automergeStableNonMajor"
   ],
-  "enabledManagers": ["dockerfile"]
+
+  "enabledManagers": ["dockerfile"],
+
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["pglombardo/pwpush-ephemeral"],
+      "customChangelogUrl": "https://github.com/pglombardo/passwordpusher"
+    }
+  ]
 }
