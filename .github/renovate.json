@@ -9,12 +9,5 @@
     ":automergeStableNonMajor"
   ],
 
-  "enabledManagers": ["dockerfile"],
-
-  "packageRules": [
-    {
-      "matchPackagePatterns": ["pglombardo/pwpush-ephemeral"],
-      "customChangelogUrl": "https://github.com/pglombardo/passwordpusher"
-    }
-  ]
+  "enabledManagers": ["dockerfile"]
 }
