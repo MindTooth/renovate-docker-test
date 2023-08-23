@@ -15,7 +15,7 @@
     {
       "matchPackageNames": ["renovate/renovate"],
       "allowedVersions": "<=36.57.1",
-      "prBodyNotes": ":information: [Bitbucket Release Notes](https://confluence.atlassian.com/bitbucketserver/release-notes-872139866.html)"
+      "prBodyNotes": ":information_source: [Bitbucket Release Notes](https://confluence.atlassian.com/bitbucketserver/release-notes-872139866.html)"
     }
   ]
 }
