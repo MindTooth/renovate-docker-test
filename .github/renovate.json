@@ -9,5 +9,12 @@
     ":automergeStableNonMajor"
   ],
 
-  "enabledManagers": ["dockerfile"]
+  "enabledManagers": ["dockerfile"],
+
+  "packageRules": [
+    {
+      "matchPackageNames": ["renovate/renovate"],
+      "prBodyNotes": "Where to I end up?"
+    }
+  ]
 }
