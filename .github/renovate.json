@@ -14,7 +14,8 @@
   "packageRules": [
     {
       "matchPackageNames": ["renovate/renovate"],
-      "prBodyNotes": "Where to I end up?"
+      "allowedVersions": "<=36.56",
+      "prBodyNotes": "[Bitbucket Release Notes](https://confluence.atlassian.com/bitbucketserver/release-notes-872139866.html)"
     }
   ]
 }
