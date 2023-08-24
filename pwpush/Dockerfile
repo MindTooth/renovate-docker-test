@@ -1,3 +1,3 @@
-FROM pglombardo/pwpush-ephemeral:1.30.13@sha256:6de1804957d286e14027dbaa94389d190a812ba1efe035609744b68b823a8160
+FROM pglombardo/pwpush-ephemeral:1.31.1@sha256:d76c0fc6023069509b9a920363e792abc4eba7123366b78d026a4513d3984e4f
 
 RUN echo "Hello, World!"
