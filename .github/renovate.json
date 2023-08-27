@@ -9,13 +9,29 @@
     ":automergeStableNonMajor"
   ],
 
-  "enabledManagers": ["dockerfile"],
+  "enabledManagers": ["dockerfile", "regex"],
 
   "packageRules": [
     {
       "matchPackageNames": ["renovate/renovate"],
       "allowedVersions": "<=36.57.1",
       "prBodyNotes": ":information_source: [Bitbucket Release Notes](https://confluence.atlassian.com/bitbucketserver/release-notes-872139866.html)"
+    },
+    {
+      "matchDatasources": ["endoflife-date"],
+      "matchPackageNames": ["python"],
+      "extractVersion": "^(?<version>\\d+\\.\\d+).+$"
+    }
+  ],
+
+  "regexManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": [
+        "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?_version\\s*=\\s*\"(?<currentValue>.*)\""
+      ],
+      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{/if}}"
     }
   ]
 }
