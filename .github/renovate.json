@@ -9,7 +9,7 @@
     ":automergeStableNonMajor"
   ],
 
-  "enabledManagers": ["dockerfile", "regex"],
+  "enabledManagers": ["docker-compose", "dockerfile", "regex"],
 
   "packageRules": [
     {
