@@ -3,10 +3,11 @@
 
   "extends": [
     "config:best-practices",
-    ":label(renovate)",
+    ":label(dependencies)",
     ":timezone(Europe/Berlin)",
     "schedule:automergeEarlyMondays",
-    ":automergeStableNonMajor"
+    ":automergeStableNonMajor",
+    ":disableRateLimiting"
   ],
 
   "enabledManagers": ["docker-compose", "dockerfile", "regex"],
