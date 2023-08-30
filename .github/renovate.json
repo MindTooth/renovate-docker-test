@@ -15,16 +15,15 @@
   "packageRules": [
     {
       "matchPackageNames": ["passbolt/passbolt"],
-      "customChangelogUrl": "https://github.com/passbolt/passbolt_api",
-      "prBodyDefinitions": {
-        "Package": "`{{{depName}}}`\nHelloo"
-      }
+      "customChangelogUrl": "https://github.com/passbolt/passbolt_api"
     },
+
     {
       "matchPackageNames": ["renovate/renovate"],
       "allowedVersions": "<=36.57.1",
       "prBodyNotes": ":information_source: [Bitbucket Release Notes](https://confluence.atlassian.com/bitbucketserver/release-notes-872139866.html)"
     },
+
     {
       "matchDatasources": ["endoflife-date"],
       "matchPackageNames": ["python"],
