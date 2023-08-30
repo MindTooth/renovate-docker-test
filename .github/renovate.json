@@ -15,7 +15,10 @@
   "packageRules": [
     {
       "matchPackageNames": ["passbolt/passbolt"],
-      "customChangelogUrl": "https://github.com/passbolt/passbolt_api"
+      "customChangelogUrl": "https://github.com/passbolt/passbolt_api",
+      "prBodyDefinitions": {
+        "Package": "`{{{depName}}}`\nHelloo"
+      }
     },
     {
       "matchPackageNames": ["renovate/renovate"],
