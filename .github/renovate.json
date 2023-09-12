@@ -10,7 +10,7 @@
     ":disableRateLimiting"
   ],
 
-  "enabledManagers": ["docker-compose", "dockerfile", "regex"],
+  "enabledManagers": ["docker-compose", "dockerfile", "regex", "npm", "pip"],
 
   "packageRules": [
     {
@@ -30,6 +30,11 @@
       "matchDatasources": ["endoflife-date"],
       "matchPackageNames": ["python"],
       "extractVersion": "^(?<version>\\d+\\.\\d+).+$"
+    },
+
+    {
+      "matchManagers": ["npm"],
+      "dependencyDashboardApproval": true
     }
   ],
 
