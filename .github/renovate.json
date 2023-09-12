@@ -10,7 +10,13 @@
     ":disableRateLimiting"
   ],
 
-  "enabledManagers": ["docker-compose", "dockerfile", "regex", "npm", "pip"],
+  "enabledManagers": [
+    "docker-compose",
+    "dockerfile",
+    "regex",
+    "npm",
+    "pip_requirements"
+  ],
 
   "packageRules": [
     {
