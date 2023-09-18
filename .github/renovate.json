@@ -21,6 +21,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["passbolt/passbolt"],
+      "extractVersion": "^v(?<version>.*)$",
 
       "customChangelogUrl": "https://github.com/passbolt/passbolt_api"
     },
