@@ -38,7 +38,7 @@
     {
       "matchPackageNames": "alpine_edge/opentofu",
       "prBodyDefinitions": {
-        "Package": "[{{{depName}}}](https://pkgs.alpinelinux.org/packages?name=opentofu)"
+        "Package": "[{{{depName}}}](https://github.com/opentofu/opentofu)"
       },
       "customChangelogUrl": "https://github.com/opentofu/opentofu"
     }
