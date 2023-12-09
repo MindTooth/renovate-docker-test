@@ -34,16 +34,12 @@
     {
       "matchManagers": ["npm"],
       "dependencyDashboardApproval": true
-    }
-  ],
-  "customManagers": [
+    },
     {
-      "customType": "regex",
-      "fileMatch": ["^Dockerfile$"],
-      "matchStrings": [
-        "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?_version\\s*=\\s*\"(?<currentValue>.*)\""
-      ],
-      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{/if}}"
+      "matchPackageNames": "alpine_edge/opentofu",
+      "prBodyDefinitions": {
+        "Package": "[{{{depName}}}](https://pkgs.alpinelinux.org/packages?name=opentofu)"
+      }
     }
   ]
 }
