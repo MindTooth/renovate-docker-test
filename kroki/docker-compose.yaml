@@ -2,7 +2,7 @@
 version: "3"
 services:
   kroki:
-    image: yuzutech/kroki:0.22.0
+    image: yuzutech/kroki:0.24.1@sha256:b43be03ec8a210471d4eaaf044b44e765551730447516c26f15c0f4b27628d45
     depends_on:
       - mermaid
       - bpmn
