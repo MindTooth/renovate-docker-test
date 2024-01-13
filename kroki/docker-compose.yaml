@@ -14,7 +14,7 @@ services:
     ports:
       - "8000:8000"
   mermaid:
-    image: yuzutech/kroki-mermaid:0.22.0
+    image: yuzutech/kroki-mermaid:0.24.1@sha256:6b4869f60aa6ab45730399db8baaa8e7a7a9476b2863ca657186bb1926c4efc1
     expose:
       - "8002"
   bpmn:
