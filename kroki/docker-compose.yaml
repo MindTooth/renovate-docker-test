@@ -18,7 +18,7 @@ services:
     expose:
       - "8002"
   bpmn:
-    image: yuzutech/kroki-bpmn:0.22.0
+    image: yuzutech/kroki-bpmn:0.24.1@sha256:87467e9e64cfcbf394c6fea19259c1d45962202c111d8514b8344dc2ae08ddc8
     expose:
       - "8003"
   excalidraw:
