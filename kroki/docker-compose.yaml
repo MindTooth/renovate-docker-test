@@ -22,6 +22,6 @@ services:
     expose:
       - "8003"
   excalidraw:
-    image: yuzutech/kroki-excalidraw:0.22.0
+    image: yuzutech/kroki-excalidraw:0.24.1@sha256:de240d0679de9bab82948cc94ab256c9534f7fb5d333c203cd7b7e3986500a62
     expose:
       - "8004"
