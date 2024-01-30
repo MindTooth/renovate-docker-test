@@ -42,6 +42,11 @@
       },
       "prBodyNotes": ":information_source: [OpenTofu Changelog](https://github.com/opentofu/opentofu/blob/main/CHANGELOG.md)",
       "customChangelogUrl": "https://github.com/opentofu/opentofu"
+    },
+    {
+      "matchPackageNames": ["opentofu/opentofu"],
+      "matchDatasources": ["github-releases"],
+      "branchPrefix": "hello"
     }
   ],
   "customManagers": [
