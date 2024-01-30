@@ -65,7 +65,7 @@
       "depNameTemplate": "opentofu/opentofu",
       "datasourceTemplate": "github-releases",
       "versioningTemplate": "loose",
-      "autoReplaceStringTemplate": "    - OPENTOFU_VERSION: \"(?<currentValue>.*)\"\\n    - OPENTOFU_VERSION: \"(?<newValue>.*)"
+      "autoReplaceStringTemplate": "OPENTOFU_VERSION: \"{{{ currentValue }}}\"\\n    - OPENTOFU_VERSION: \"{{{ newValue }}}\""
     }
   ]
 }
