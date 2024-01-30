@@ -1,5 +1,0 @@
----
-.opentofu-versions:
-  parallel:
-    matrix:
-      - OPENTOFU_VERSION: "1.6.0"

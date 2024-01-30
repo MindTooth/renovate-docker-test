@@ -42,11 +42,6 @@
       },
       "prBodyNotes": ":information_source: [OpenTofu Changelog](https://github.com/opentofu/opentofu/blob/main/CHANGELOG.md)",
       "customChangelogUrl": "https://github.com/opentofu/opentofu"
-    },
-    {
-      "matchPackageNames": ["opentofu/opentofu"],
-      "matchDatasources": ["github-releases"],
-      "branchPrefix": "hello"
     }
   ],
   "customManagers": [
@@ -57,15 +52,6 @@
         "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?_version\\s*=\\s*\"(?<currentValue>.*)\""
       ],
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{/if}}"
-    },
-    {
-      "customType": "regex",
-      "fileMatch": ["^\\.gitlab-ci\\.yml$"],
-      "matchStrings": ["OPENTOFU_VERSION: \"(?<currentValue>.*)\"\\s"],
-      "depNameTemplate": "opentofu/opentofu",
-      "datasourceTemplate": "github-releases",
-      "versioningTemplate": "loose",
-      "autoReplaceStringTemplate": "OPENTOFU_VERSION: \"{{{ currentValue }}}\"\\n    - OPENTOFU_VERSION: \"{{{ newValue }}}\""
     }
   ]
 }
