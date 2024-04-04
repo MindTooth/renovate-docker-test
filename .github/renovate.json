@@ -5,7 +5,6 @@
     ":label(dependencies)",
     ":timezone(Europe/Berlin)",
     "schedule:automergeEarlyMondays",
-    ":automergeStableNonMajor",
     ":disableRateLimiting",
     "regexManagers:dockerfileVersions",
     ":separateMultipleMajorReleases"
