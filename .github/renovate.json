@@ -4,45 +4,35 @@
     "config:best-practices",
     ":label(dependencies)",
     ":timezone(Europe/Berlin)",
-    "schedule:automergeEarlyMondays",
+    "schedule:earlyMondays",
     ":disableRateLimiting",
     "customManagers:dockerfileVersions",
     ":separateMultipleMajorReleases"
   ],
   "enabledManagers": [
+    "custom.regex",
     "docker-compose",
     "dockerfile",
-    "custom.regex",
     "npm",
     "pip_requirements"
   ],
   "packageRules": [
     {
-      "matchPackageNames": [
-        "passbolt/passbolt"
-      ],
+      "matchPackageNames": ["passbolt/passbolt"],
       "changelogUrl": "https://github.com/passbolt/passbolt_api"
     },
     {
-      "matchPackageNames": [
-        "renovate/renovate"
-      ],
+      "matchPackageNames": ["renovate/renovate"],
       "allowedVersions": "<=36.57.1",
       "prBodyNotes": ":information_source: [Bitbucket Release Notes](https://confluence.atlassian.com/bitbucketserver/release-notes-872139866.html)"
     },
     {
-      "matchDatasources": [
-        "endoflife-date"
-      ],
-      "matchPackageNames": [
-        "python"
-      ],
+      "matchDatasources": ["endoflife-date"],
+      "matchPackageNames": ["python"],
       "extractVersion": "^(?<version>\\d+\\.\\d+).+$"
     },
     {
-      "matchManagers": [
-        "npm"
-      ],
+      "matchManagers": ["npm"],
       "dependencyDashboardApproval": true
     },
     {
@@ -57,9 +47,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [
-        "^Dockerfile$"
-      ],
+      "fileMatch": ["^Dockerfile$"],
       "matchStrings": [
         "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?_version\\s*=\\s*\"(?<currentValue>.*)\""
       ],
