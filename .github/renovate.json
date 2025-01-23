@@ -23,7 +23,8 @@
     },
     {
       "matchPackageNames": ["/renovate/"],
-      "extends": ["schedule:monthly"]
+      "extends": ["schedule:monthly"],
+      "rebaseWhen": "never"
     },
     {
       "matchDatasources": ["endoflife-date"],
