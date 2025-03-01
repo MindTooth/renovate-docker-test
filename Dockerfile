@@ -5,6 +5,6 @@ ENV python_version="3.6"
 
 FROM passbolt/passbolt:4.8.0-1-ce
 
-FROM timberio/vector:0.43.0-alpine
+FROM timberio/vector:0.45.0-alpine@sha256:936e7e05f54b817f5957acbc72ad32a9b7016f7071c03937ee5cbd199e204c02
 
-FROM timberio/vector:0.43.0-debian
+FROM timberio/vector:0.45.0-debian@sha256:987a15ebfb2eac3a4d5efb26252d140f799553feffb753dc215bdf738a7d4174
