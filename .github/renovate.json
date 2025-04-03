@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
   "extends": [
     "config:best-practices",
     ":label(dependencies)",
@@ -9,6 +10,7 @@
     "customManagers:dockerfileVersions",
     ":separateMultipleMajorReleases"
   ],
+
   "enabledManagers": [
     "custom.regex",
     "docker-compose",
@@ -16,11 +18,8 @@
     "npm",
     "pip_requirements"
   ],
+
   "packageRules": [
-    {
-      "matchPackageNames": ["passbolt/passbolt"],
-      "changelogUrl": "https://github.com/passbolt/passbolt_api"
-    },
     {
       "matchPackageNames": ["/renovate/"],
       "extends": ["schedule:monthly"],
@@ -48,6 +47,7 @@
       "changelogUrl": "https://github.com/vectordotdev/vector"
     }
   ],
+
   "customManagers": [
     {
       "customType": "regex",
