@@ -41,10 +41,6 @@
       },
       "prBodyNotes": ":information_source: [OpenTofu Changelog](https://github.com/opentofu/opentofu/blob/main/CHANGELOG.md)",
       "changelogUrl": "https://github.com/opentofu/opentofu"
-    },
-    {
-      "matchPackageNames": ["timberio/vector"],
-      "changelogUrl": "https://github.com/vectordotdev/vector"
     }
   ],
 
