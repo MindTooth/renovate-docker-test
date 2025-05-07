@@ -1,6 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-
   "extends": [
     "config:best-practices",
     ":label(dependencies)",
@@ -10,7 +9,6 @@
     "customManagers:dockerfileVersions",
     ":separateMultipleMajorReleases"
   ],
-
   "enabledManagers": [
     "custom.regex",
     "docker-compose",
@@ -18,20 +16,29 @@
     "npm",
     "pip_requirements"
   ],
-
   "packageRules": [
     {
-      "matchPackageNames": ["/renovate/"],
-      "extends": ["schedule:monthly"],
+      "matchPackageNames": [
+        "/renovate/"
+      ],
+      "extends": [
+        "schedule:monthly"
+      ],
       "rebaseWhen": "never"
     },
     {
-      "matchDatasources": ["endoflife-date"],
-      "matchPackageNames": ["python"],
+      "matchDatasources": [
+        "endoflife-date"
+      ],
+      "matchPackageNames": [
+        "python"
+      ],
       "extractVersion": "^(?<version>\\d+\\.\\d+).+$"
     },
     {
-      "matchManagers": ["npm"],
+      "matchManagers": [
+        "npm"
+      ],
       "dependencyDashboardApproval": true
     },
     {
@@ -43,11 +50,12 @@
       "changelogUrl": "https://github.com/opentofu/opentofu"
     }
   ],
-
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^Dockerfile$"],
+      "managerFilePatterns": [
+        "/^Dockerfile$/"
+      ],
       "matchStrings": [
         "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?_version\\s*=\\s*\"(?<currentValue>.*)\""
       ],
