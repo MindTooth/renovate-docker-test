@@ -1,4 +1,4 @@
-FROM renovate/renovate:40.0.5@sha256:f27ea7262cd00e2874c5f48490d4d2784d02764370eaa6d64cd279e889d0bf4e
+FROM renovate/renovate:40.11.13@sha256:941b09d86d0e956023f83c56d42df5fd1eec3fceee0b54a3ff3f866f86332de6
 
 # renovate: datasource=endoflife-date depName=python versioning=loose
 ENV python_version="3.13"
