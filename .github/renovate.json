@@ -18,27 +18,16 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": [
-        "/renovate/"
-      ],
-      "extends": [
-        "schedule:monthly"
-      ],
-      "rebaseWhen": "never"
+      "matchPackageNames": ["/renovate/"],
+      "extends": ["schedule:monthly"]
     },
     {
-      "matchDatasources": [
-        "endoflife-date"
-      ],
-      "matchPackageNames": [
-        "python"
-      ],
+      "matchDatasources": ["endoflife-date"],
+      "matchPackageNames": ["python"],
       "extractVersion": "^(?<version>\\d+\\.\\d+).+$"
     },
     {
-      "matchManagers": [
-        "npm"
-      ],
+      "matchManagers": ["npm"],
       "dependencyDashboardApproval": true
     },
     {
@@ -53,9 +42,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "managerFilePatterns": [
-        "/^Dockerfile$/"
-      ],
+      "managerFilePatterns": ["/^Dockerfile$/"],
       "matchStrings": [
         "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?_version\\s*=\\s*\"(?<currentValue>.*)\""
       ],
