@@ -19,7 +19,8 @@
   "packageRules": [
     {
       "matchPackageNames": ["/renovate/"],
-      "extends": ["schedule:monthly"]
+      "extends": ["schedule:monthly"],
+      "groupName": "renovate"
     },
     {
       "matchDatasources": ["endoflife-date"],
