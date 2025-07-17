@@ -3,7 +3,7 @@
 # renovate: datasource=endoflife-date depName=python versioning=loose
 ENV python_version="3.13"
 
-FROM passbolt/passbolt:5.2.0-1-ce@sha256:2de9d258a2c40eeee49138cb5f25e8cf40f18d564319d2684c86dde6c98df4b6
+FROM passbolt/passbolt:5.3.2-1-ce@sha256:01c01a4e74fec223fd65a1e476cf2da482406c6eff8c94a592432ca177ddeb0a
 
 FROM timberio/vector:0.47.0-alpine@sha256:4d2d24f18a31b59e62dde41c5f8f88927f33a3ed9a39a50923d616b1a85890b6
 
