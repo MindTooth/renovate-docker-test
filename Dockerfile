@@ -9,4 +9,4 @@ FROM timberio/vector:0.48.0-alpine@sha256:2dda29c892cef4e80e1b9d00d7981d29658aa9
 
 FROM timberio/vector:0.48.0-debian@sha256:dae36da06c37c1c17d00c0fcf004925768d32161a4ccd3068cd9745a528f0fbd
 
-FROM renovate/renovate:41.5.0@sha256:309442ecefe9bb54812f038cf1d0e20ef2e0ba2a5693256de85106dfdef6c550
+FROM renovate/renovate:41.40.0@sha256:21e2e5e8c51537649b5d9d1e85c0085aa5f53d5d198e2400d5ecc1e2448f9e9a
