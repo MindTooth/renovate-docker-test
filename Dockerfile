@@ -5,8 +5,8 @@ ENV python_version="3.13"
 
 FROM passbolt/passbolt:5.4.1-1-ce@sha256:3bfb982474bfb26b625e5827c8123b7c3ec8ee3a4cb0839c1cce2053928f7823
 
-FROM timberio/vector:0.49.0-alpine@sha256:2a31648e67280953aaf6b219c1b04729ac5ed12820ec2bfb698630b2d989d135
+FROM timberio/vector:0.50.0-alpine@sha256:93761c26fa3a3793f5f200de0f4cfc6102b5e9803ab33b4830d0873ba8dbdc4f
 
-FROM timberio/vector:0.49.0-debian@sha256:6a56f8ee78e014d53a32fd7c6f6be9c18244fe861d938932fad8d6e65d3f5926
+FROM timberio/vector:0.50.0-debian@sha256:8e81f992197125f736e1fe5d73117ca6b69a0bb69cf3633f82b9233c9769c9c1
 
 FROM renovate/renovate:41.95.0@sha256:35e3b95481caa6dc908ff32f79aaa285bef9a1b8fa73e2fde06eb1da3a9d52fa
