@@ -1,7 +1,7 @@
 # FROM renovate/renovate:40.11.13@sha256:941b09d86d0e956023f83c56d42df5fd1eec3fceee0b54a3ff3f866f86332de6
 
 # renovate: datasource=endoflife-date depName=python versioning=loose
-ENV python_version="3.13"
+ENV python_version="3.14"
 
 FROM passbolt/passbolt:5.5.0-1-ce@sha256:311d1985d7857115a73c3eb172f8fd9ef40e018e46964f418e62d4236190539f
 
