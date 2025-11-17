@@ -9,6 +9,6 @@ FROM timberio/vector:0.50.0-alpine@sha256:93761c26fa3a3793f5f200de0f4cfc6102b5e9
 
 FROM timberio/vector:0.50.0-debian@sha256:8e81f992197125f736e1fe5d73117ca6b69a0bb69cf3633f82b9233c9769c9c1
 
-FROM renovate/renovate:42.12.0@sha256:2aa2530afe49bfffb1083d34a33a5be7748e8d1a5fd7c586c0fe67a91acca8f7
+FROM renovate/renovate:42.13.3@sha256:5cdea7e2aadccbfe7fcf3451a53d037a27bc5463be4231b6109e10a2ab822a40
 
 FROM grafana/grafana:12.2.1@sha256:35c41e0fd0295f5d0ee5db7e780cf33506abfaf47686196f825364889dee878b
