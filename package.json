@@ -4,6 +4,6 @@
   "dependencies": {
     "@commitlint/cli": "20.2.0",
     "@commitlint/config-conventional": "20.2.0",
-    "renovate": "42.52.2"
+    "renovate": "42.64.1"
   }
 }
