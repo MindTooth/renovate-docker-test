@@ -1,14 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
   "extends": [
-    "config:best-practices",
-    ":label(dependencies)",
-    ":timezone(Europe/Berlin)",
+    "github>MindTooth/renovate-default-preset",
     "schedule:earlyMondays",
-    ":disableRateLimiting",
     "customManagers:dockerfileVersions",
     ":separateMultipleMajorReleases"
   ],
+
   "enabledManagers": [
     "custom.regex",
     "docker-compose",
@@ -16,6 +15,7 @@
     "npm",
     "pip_requirements"
   ],
+
   "packageRules": [
     {
       "matchPackageNames": ["/renovate/"],
@@ -40,6 +40,7 @@
       "changelogUrl": "https://github.com/opentofu/opentofu"
     }
   ],
+
   "customManagers": [
     {
       "customType": "regex",
