@@ -15,8 +15,8 @@ importers:
         specifier: 20.3.1
         version: 20.3.1
       renovate:
-        specifier: 42.81.13
-        version: 42.81.13(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 42.81.14
+        version: 42.81.14(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -384,12 +384,6 @@ packages:
 
   '@opentelemetry/context-async-hooks@2.3.0':
     resolution: {integrity: sha512-hGcsT0qDP7Il1L+qT3JFpiGl1dCjF794Bb4yCRCYdr7XC0NwHtOF3ngF86Gk6TUnsakbyQsDQ0E/S4CU0F4d4g==}
-    engines: {node: ^18.19.0 || >=20.6.0}
-    peerDependencies:
-      '@opentelemetry/api': '>=1.0.0 <1.10.0'
-
-  '@opentelemetry/core@2.2.0':
-    resolution: {integrity: sha512-FuabnnUm8LflnieVxs6eP7Z383hgQU4W1e3KJS6aOG3RxWxcHyBxH8fDMHNgu/gFx/M2jvTOW/4/PHhLz6bjWw==}
     engines: {node: ^18.19.0 || >=20.6.0}
     peerDependencies:
       '@opentelemetry/api': '>=1.0.0 <1.10.0'
@@ -2741,8 +2735,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@42.81.13:
-    resolution: {integrity: sha512-xjBIHZjPESCGmLN5dq4biyjokM0DuqrZ39xaASXsSqvhxO/Vnaee1/LkxG10R/v92DzOKVQbQxOCTF35GrcgBw==}
+  renovate@42.81.14:
+    resolution: {integrity: sha512-+O/ydfiYU0u1xJnkTNEkh9wT5GsljGgUfekN/4tVssOXYL1VjthPdkKiffXj/i2v+3l/G8WDLLf7oa+C7B1uEA==}
     engines: {node: ^22.13.0 || ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -2821,8 +2815,9 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sax@1.4.3:
-    resolution: {integrity: sha512-yqYn1JhPczigF94DMS+shiDMjDowYO6y9+wB/4WgO0Y19jWYk0lQ4tuG5KI7kj4FTp1wxPj5IFfcrz/s1c3jjQ==}
+  sax@1.4.4:
+    resolution: {integrity: sha512-1n3r/tGXO6b6VXMdFT54SHzT9ytu9yr7TaELowdYpMqY/Ao7EnlQGmAQ1+RatX7Tkkdm6hONI2owqNx2aZj5Sw==}
+    engines: {node: '>=11.0.0'}
 
   semver-compare@1.0.0:
     resolution: {integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==}
@@ -4334,11 +4329,6 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
 
-  '@opentelemetry/core@2.2.0(@opentelemetry/api@1.9.0)':
-    dependencies:
-      '@opentelemetry/api': 1.9.0
-      '@opentelemetry/semantic-conventions': 1.38.0
-
   '@opentelemetry/core@2.3.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
@@ -4421,21 +4411,21 @@ snapshots:
   '@opentelemetry/resource-detector-aws@2.9.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/core': 2.2.0(@opentelemetry/api@1.9.0)
+      '@opentelemetry/core': 2.3.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 2.3.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.38.0
 
   '@opentelemetry/resource-detector-azure@0.17.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/core': 2.2.0(@opentelemetry/api@1.9.0)
+      '@opentelemetry/core': 2.3.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 2.3.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.38.0
 
   '@opentelemetry/resource-detector-gcp@0.44.0(@opentelemetry/api@1.9.0)(encoding@0.1.13)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/core': 2.2.0(@opentelemetry/api@1.9.0)
+      '@opentelemetry/core': 2.3.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 2.3.0(@opentelemetry/api@1.9.0)
       gcp-metadata: 6.1.1(encoding@0.1.13)
     transitivePeerDependencies:
@@ -7146,7 +7136,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@42.81.13(encoding@0.1.13)(typanion@3.14.0):
+  renovate@42.81.14(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.958.0
       '@aws-sdk/client-ec2': 3.958.0
@@ -7191,7 +7181,6 @@ snapshots:
       azure-devops-node-api: 15.1.2
       bunyan: 1.8.15
       cacache: 20.0.3
-      chalk: 5.6.2
       changelog-filename-regex: 2.0.1
       clean-git-ref: 2.0.1
       commander: 14.0.2
@@ -7251,7 +7240,7 @@ snapshots:
       remark-gfm: 4.0.1
       remark-github: 12.0.0
       safe-stable-stringify: 2.5.0
-      sax: 1.4.3
+      sax: 1.4.4
       semver: 7.7.2
       semver-stable: 3.0.0
       semver-utils: 1.1.4
@@ -7350,7 +7339,7 @@ snapshots:
   safer-buffer@2.1.2:
     optional: true
 
-  sax@1.4.3: {}
+  sax@1.4.4: {}
 
   semver-compare@1.0.0: {}
 
@@ -7814,7 +7803,7 @@ snapshots:
 
   xmldoc@2.0.3:
     dependencies:
-      sax: 1.4.3
+      sax: 1.4.4
 
   xtend@4.0.2: {}
 
