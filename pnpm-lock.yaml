@@ -2100,8 +2100,8 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
-  lru-cache@11.2.4:
-    resolution: {integrity: sha512-B5Y16Jr9LB9dHVkh6ZevG+vAbOsNOYCX+sXvFWFu7B3Iz5mijW3zdbMyhsh8ANd2mSWBYdJgnqi+mL7/LrOPYg==}
+  lru-cache@11.2.5:
+    resolution: {integrity: sha512-vFrFJkWtJvJnD5hg+hJvVE8Lh/TcMzKnTgCWmtBipwI5yLX/iX+5UB2tfuyODF5E7k9xEzMdYgGqaSb1c0c5Yw==}
     engines: {node: 20 || >=22}
 
   lru-cache@6.0.0:
@@ -2391,8 +2391,8 @@ packages:
     resolution: {integrity: sha512-at/ZndSy3xEGJ8i0ygALh8ru9qy7gWW1cmkaqBN29JmMlIvM//MEO9y1sk/avxuwnPcfhkejkLsuPxH81BrkSg==}
     engines: {node: '>=0.8.0'}
 
-  nan@2.24.0:
-    resolution: {integrity: sha512-Vpf9qnVW1RaDkoNKFUvfxqAbtI8ncb8OJlqZ9wwpXzWPEsvsB1nvdUi6oYrHIkQ1Y/tMDnr1h4nczS0VB9Xykg==}
+  nan@2.25.0:
+    resolution: {integrity: sha512-0M90Ag7Xn5KMLLZ7zliPWP3rT90P6PN+IzVFS0VqmnPktBk3700xUVv8Ikm9EUaUE5SDWdp/BIxdENzVznpm1g==}
 
   nanoid@5.1.6:
     resolution: {integrity: sha512-c7+7RQ+dMB5dPwwCp4ee1/iV/q2P6aK1mTZcfr1BTuVlyW9hJYiMPybJCcnBlQtuSmTIWNeazm/zqNoZSSElBg==}
@@ -4289,7 +4289,7 @@ snapshots:
       agent-base: 7.1.4
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.6
-      lru-cache: 11.2.4
+      lru-cache: 11.2.5
       socks-proxy-agent: 8.0.5
     transitivePeerDependencies:
       - supports-color
@@ -4297,7 +4297,7 @@ snapshots:
 
   '@npmcli/fs@5.0.0':
     dependencies:
-      semver: 7.7.3
+      semver: 7.7.2
 
   '@one-ini/wasm@0.2.0': {}
 
@@ -5071,7 +5071,7 @@ snapshots:
       hpagent: 1.2.0
       micromatch: 4.0.8
       p-limit: 2.3.0
-      semver: 7.7.3
+      semver: 7.7.2
       strip-ansi: 6.0.1
       tar: 6.2.1
       tinylogic: 2.0.0
@@ -5238,7 +5238,7 @@ snapshots:
 
   builtins@5.1.0:
     dependencies:
-      semver: 7.7.3
+      semver: 7.7.2
 
   bunyan@1.8.15:
     optionalDependencies:
@@ -5252,7 +5252,7 @@ snapshots:
       '@npmcli/fs': 5.0.0
       fs-minipass: 3.0.3
       glob: 13.0.0
-      lru-cache: 11.2.4
+      lru-cache: 11.2.5
       minipass: 7.1.2
       minipass-collect: 2.0.1
       minipass-flush: 1.0.5
@@ -5513,7 +5513,7 @@ snapshots:
 
   dtrace-provider@0.8.8:
     dependencies:
-      nan: 2.24.0
+      nan: 2.25.0
     optional: true
 
   dunder-proto@1.0.1:
@@ -5533,7 +5533,7 @@ snapshots:
       '@one-ini/wasm': 0.2.0
       commander: 14.0.2
       minimatch: 10.0.1
-      semver: 7.7.3
+      semver: 7.7.2
 
   email-addresses@5.0.0: {}
 
@@ -5848,7 +5848,7 @@ snapshots:
       es6-error: 4.1.1
       matcher: 3.0.0
       roarr: 2.15.4
-      semver: 7.7.3
+      semver: 7.7.2
       serialize-error: 7.0.1
 
   global-directory@4.0.1:
@@ -6223,7 +6223,7 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
-  lru-cache@11.2.4: {}
+  lru-cache@11.2.5: {}
 
   lru-cache@6.0.0:
     dependencies:
@@ -6708,7 +6708,7 @@ snapshots:
       rimraf: 2.4.5
     optional: true
 
-  nan@2.24.0:
+  nan@2.25.0:
     optional: true
 
   nanoid@5.1.6: {}
@@ -6728,7 +6728,7 @@ snapshots:
 
   node-abi@3.87.0:
     dependencies:
-      semver: 7.7.3
+      semver: 7.7.2
     optional: true
 
   node-domexception@1.0.0: {}
@@ -6753,7 +6753,7 @@ snapshots:
       make-fetch-happen: 15.0.3
       nopt: 9.0.0
       proc-log: 6.1.0
-      semver: 7.7.3
+      semver: 7.7.2
       tar: 7.5.6
       tinyglobby: 0.2.15
       which: 6.0.0
@@ -6782,7 +6782,7 @@ snapshots:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.16.1
-      semver: 7.7.3
+      semver: 7.7.2
       validate-npm-package-license: 3.0.4
 
   normalize-url@6.1.0: {}
@@ -6899,7 +6899,7 @@ snapshots:
 
   path-scurry@2.0.1:
     dependencies:
-      lru-cache: 11.2.4
+      lru-cache: 11.2.5
       minipass: 7.1.2
 
   pend@1.2.0: {}
@@ -7004,7 +7004,7 @@ snapshots:
   re2@1.23.0:
     dependencies:
       install-artifact-from-github: 1.4.0
-      nan: 2.24.0
+      nan: 2.25.0
       node-gyp: 12.1.0
     transitivePeerDependencies:
       - supports-color
