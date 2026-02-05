@@ -15,8 +15,8 @@ importers:
         specifier: 20.3.1
         version: 20.3.1
       renovate:
-        specifier: 42.95.2
-        version: 42.95.2(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 42.95.9
+        version: 42.95.9(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -2631,8 +2631,8 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  re2@1.23.0:
-    resolution: {integrity: sha512-mT7+/Lz+Akjm/C/X6PiaHihcJL92TNNXai/C4c/dfBbhtwMm1uKEEoA2Lz/FF6aBFfQzg5mAyv4BGjM4q44QwQ==}
+  re2@1.23.2:
+    resolution: {integrity: sha512-ds5iwbnfsmyiNDtuljBNAva54O4jhR77jL5bSM73NnsWQHkYoGWuePiZTrt6O3xXAHtrB/fviNQsPGRei6031w==}
 
   read-pkg-up@7.0.1:
     resolution: {integrity: sha512-zK0TB7Xd6JpCLmlLmufqykGE+/TlOePD6qKClNW7hHDKFh/J7/7gCWGR7joEQEW1bKq3a3yUZSObOoWLFQ4ohg==}
@@ -2676,8 +2676,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@42.95.2:
-    resolution: {integrity: sha512-IRqs+hqPchlpf/gU2tjSFufNCKPbMCxQNKbfb/SNTrJDfvPAER8opdi7j8MPUwkvEMKZHknELMdd10vJeXHjlw==}
+  renovate@42.95.9:
+    resolution: {integrity: sha512-4PUsXxF0R3n7vwzL/AyRcJYjXmh9OHAqlTkvdmR5KzuXFcv5xtNKCinLLeeQVoJwXy8v7kbbjx4RQPCcTQuDqA==}
     engines: {node: ^22.13.0 || ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -6904,7 +6904,7 @@ snapshots:
       strip-json-comments: 2.0.1
     optional: true
 
-  re2@1.23.0:
+  re2@1.23.2:
     dependencies:
       install-artifact-from-github: 1.4.0
       nan: 2.25.0
@@ -7004,7 +7004,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@42.95.2(encoding@0.1.13)(typanion@3.14.0):
+  renovate@42.95.9(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.958.0
       '@aws-sdk/client-ec2': 3.958.0
@@ -7127,7 +7127,7 @@ snapshots:
     optionalDependencies:
       better-sqlite3: 12.6.2
       openpgp: 6.3.0
-      re2: 1.23.0
+      re2: 1.23.2
     transitivePeerDependencies:
       - aws-crt
       - encoding
