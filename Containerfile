@@ -11,4 +11,4 @@ FROM timberio/vector:0.53.0-debian@sha256:a3c2790c83180f89569981173d34a9680c05dc
 
 FROM renovate/renovate:43.73.1@sha256:7bd2b4c87e345f32ec24886221bc2cc6c602b39baad88167516a107c6924d4ed
 
-FROM grafana/grafana:12.4.0@sha256:b0ae311af06228bcfd4a620504b653db80f5b91e94dc3dc2a5b7dab202bcde20
+FROM grafana/grafana:12.4.1@sha256:e932bd6ed0e026595b08483cd0141e5103e1ab7ff8604839ff899b8dc54cabcb
