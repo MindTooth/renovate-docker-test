@@ -2,8 +2,8 @@
   "name": "renovate-docker-test",
   "version": "0.0.1",
   "dependencies": {
-    "@commitlint/cli": "20.4.4",
-    "@commitlint/config-conventional": "20.4.4",
+    "@commitlint/cli": "20.5.0",
+    "@commitlint/config-conventional": "20.5.0",
     "renovate": "43.73.1"
   }
 }
