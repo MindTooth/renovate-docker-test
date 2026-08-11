@@ -1,4 +1,4 @@
 ---
 services:
   renovate:
-    image: pglombardo/pwpush-ephemeral:1.35.0@sha256:21fc4c2042aa7d5d54f63f8ce93f09748935378fd12761f2de18ce794b6de653
+    image: pglombardo/pwpush:1.35.0@sha256:b9f470cf808c13f758b1336ab7532a56a1d1cbb414ef7fb3ef3bd4982a4820fe
