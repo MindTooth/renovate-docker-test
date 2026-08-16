@@ -2,7 +2,7 @@
 version: "3"
 services:
   kroki:
-    image: yuzutech/kroki:0.32.0@sha256:877f41306141ea2ceaf6cfb0a4d9d5b4afaf6d147413963712fc7f5544799c6c
+    image: yuzutech/kroki:0.32.1@sha256:6980bfb218b48b74ea14b888d9c7e8c032d1cb6325f3292277abdf62483abd9d
     depends_on:
       - mermaid
       - bpmn
@@ -14,14 +14,14 @@ services:
     ports:
       - "8000:8000"
   mermaid:
-    image: yuzutech/kroki-mermaid:0.32.0@sha256:866257fc2aff924533b19f68787ea4a43ad8ac99937e8079d07a2e9551d413fa
+    image: yuzutech/kroki-mermaid:0.32.1@sha256:ad6721646aabfb8b5f5005db2daa6e37189c25e18aab19a8ef8590b6171cd192
     expose:
       - "8002"
   bpmn:
-    image: yuzutech/kroki-bpmn:0.32.0@sha256:ac5e3b04c43b64c30cd0bdd210134675ff77a7a6b248bc985ce0b0d19cc554e3
+    image: yuzutech/kroki-bpmn:0.32.1@sha256:1558692f39cbede20f70f732d34c906dde7a3333e004f55dc66ea8fbfc3e7d70
     expose:
       - "8003"
   excalidraw:
-    image: yuzutech/kroki-excalidraw:0.32.0@sha256:b537b311ee0e5b79c175be9fd93eb2e94063bb96b07ed39b46bede47b9d30e01
+    image: yuzutech/kroki-excalidraw:0.32.1@sha256:214f13c1cd3c3f79a18a83631a900fedbed71b2f39d3a0c5630ac5fa5ad40046
     expose:
       - "8004"
