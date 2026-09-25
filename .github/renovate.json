@@ -30,14 +30,6 @@
     {
       "matchManagers": ["npm"],
       "dependencyDashboardApproval": true
-    },
-    {
-      "matchPackageNames": "alpine_edge/opentofu",
-      "prBodyDefinitions": {
-        "Package": "[{{{depName}}}](https://github.com/opentofu/opentofu)"
-      },
-      "prBodyNotes": ":information_source: [OpenTofu Changelog](https://github.com/opentofu/opentofu/blob/main/CHANGELOG.md)",
-      "changelogUrl": "https://github.com/opentofu/opentofu"
     }
   ],
 
