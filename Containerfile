@@ -15,7 +15,7 @@ FROM grafana/grafana:13.2.3@sha256:b28bae15e219c998fb0e0424ed724930cc61b1f61fb40
 
 # Official container tools: versioned stable images for source URL and changelog tests.
 FROM quay.io/containers/podman:v5.4.0@sha256:5d11e397c064a2307ed8749c33ac65511db14c9369f22737a4cc47df7b815a73 AS podman_containers
-FROM quay.io/podman/stable:v5.4.0@sha256:220fce4a743c2f47b066c71a4344bef9883007735e939b1015bc6d1d0f9d3d89 AS podman_stable
+FROM quay.io/podman/stable:v5.8.7@sha256:c70aa78a604fafa95076aae36bdc91d1173d2bff05e2749bf7d79c88c248acc0 AS podman_stable
 FROM quay.io/containers/buildah:v1.39.0@sha256:02bf7089e6d7f52c3c5a0c058bd4d61ff440b01dfd22188309f96566cc494c8d AS buildah_containers
 FROM quay.io/buildah/stable:v1.39.0@sha256:85ad593f788870d76c4e0d37c42279d42416b7cad2c1577dd019c83ae04232fa AS buildah_stable
 FROM quay.io/containers/skopeo:v1.18.0@sha256:827c878ccf6767899de62022ac57927164da5b88d94ac11c970bf2b15c572361 AS skopeo_containers
