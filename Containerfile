@@ -12,3 +12,22 @@ FROM timberio/vector:0.58.0-debian@sha256:1c1ea358c617ea0b23003d5af87f7a678b30f8
 FROM renovate/renovate:44.126.1@sha256:a49e9555e14cf51018cc819a45e15022b9151c601eb44141a18be5080701c352
 
 FROM grafana/grafana:13.2.3@sha256:b28bae15e219c998fb0e0424ed724930cc61b1f61fb404d47c862f9a23f9e572
+
+# Official container tools: versioned stable images for source URL and changelog tests.
+FROM quay.io/containers/podman:v5.4.0 AS podman_containers
+FROM quay.io/podman/stable:v5.4.0 AS podman_stable
+FROM quay.io/containers/buildah:v1.39.0 AS buildah_containers
+FROM quay.io/buildah/stable:v1.39.0 AS buildah_stable
+FROM quay.io/containers/skopeo:v1.18.0 AS skopeo_containers
+FROM quay.io/skopeo/stable:v1.18.0 AS skopeo_stable
+
+# Testing and development images for source URL and digest update tests.
+FROM quay.io/podman/testing:latest AS podman_testing
+FROM quay.io/podman/upstream:latest AS podman_upstream
+FROM quay.io/buildah/testing:latest AS buildah_testing
+FROM quay.io/buildah/upstream:latest AS buildah_upstream
+FROM quay.io/skopeo/testing:latest AS skopeo_testing
+FROM quay.io/skopeo/upstream:latest AS skopeo_upstream
+
+# All-in-one image containing Podman, Buildah, and Skopeo.
+FROM quay.io/containers/aio:latest AS container_tools_aio
