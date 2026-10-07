@@ -22,7 +22,7 @@ FROM quay.io/containers/skopeo:v1.18.0@sha256:827c878ccf6767899de62022ac57927164
 FROM quay.io/skopeo/stable:v1.18.0@sha256:c4c8a9d6fc95e331fa92fc31de3f6c9b5fe4761c82f0acb99669eef067fb7c33 AS skopeo_stable
 
 # Testing and development images for source URL and digest update tests.
-FROM quay.io/podman/testing:latest@sha256:e840acf31e1b77b4184f8b27d0119e42628a7bfc99ff0ae54e8a6d4bdb5aca1f AS podman_testing
+FROM quay.io/podman/testing:latest@sha256:06212b96ac750c6930216860f1f8d04094ef80d8346668c840962f2bbe96ce3a AS podman_testing
 FROM quay.io/podman/upstream:latest@sha256:e48c1bdab098b5d86e39c3b822848d921d6fb2cb6dd26a818043c73cc0bd388b AS podman_upstream
 FROM quay.io/buildah/testing:latest@sha256:0293b15d362b4d991e9a5c610d2f1979bc95630915968a985741f057600e38d7 AS buildah_testing
 FROM quay.io/buildah/upstream:latest@sha256:e76e825ec19506a3917d12511bfa8ab03e38b5408da6537c8b597531fdfe2ab1 AS buildah_upstream
