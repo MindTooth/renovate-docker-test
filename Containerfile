@@ -27,7 +27,7 @@ FROM quay.io/podman/upstream:latest@sha256:e48c1bdab098b5d86e39c3b822848d921d6fb
 FROM quay.io/buildah/testing:latest@sha256:0293b15d362b4d991e9a5c610d2f1979bc95630915968a985741f057600e38d7 AS buildah_testing
 FROM quay.io/buildah/upstream:latest@sha256:e76e825ec19506a3917d12511bfa8ab03e38b5408da6537c8b597531fdfe2ab1 AS buildah_upstream
 FROM quay.io/skopeo/testing:latest@sha256:d17a86f05b07fbc5c275f053033a325db9eb43db504f10e4c079a049db3e6267 AS skopeo_testing
-FROM quay.io/skopeo/upstream:latest@sha256:237d30270e84933a8c92342c5d3d6190b9089273a78f99dfa2ff5a3d3e331359 AS skopeo_upstream
+FROM quay.io/skopeo/upstream:latest@sha256:705de7a663f955e3814b193e339f73c2f23768a26ed83d783f58a038c3c0106d AS skopeo_upstream
 
 # All-in-one image containing Podman, Buildah, and Skopeo.
 FROM quay.io/containers/aio:latest@sha256:74c6323e8c0e368b32ef3270d48cda26a5e95e2843e691e340bfc4957c594145 AS container_tools_aio
