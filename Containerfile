@@ -14,7 +14,7 @@ FROM renovate/renovate:44.137.0@sha256:805dbf260d627b5dc53a59be9c26b7be2854977e4
 FROM grafana/grafana:13.2.3@sha256:b28bae15e219c998fb0e0424ed724930cc61b1f61fb404d47c862f9a23f9e572
 
 # Official container tools: versioned stable images for source URL and changelog tests.
-FROM quay.io/containers/podman:v5.4.0@sha256:5d11e397c064a2307ed8749c33ac65511db14c9369f22737a4cc47df7b815a73 AS podman_containers
+FROM quay.io/containers/podman:v5.8.7@sha256:5651cd79ce6d18c11e1be2ba87a3a0b0ff4930fa9b266a92a0cc57a6546fc5e5 AS podman_containers
 FROM quay.io/podman/stable:v5.4.0@sha256:220fce4a743c2f47b066c71a4344bef9883007735e939b1015bc6d1d0f9d3d89 AS podman_stable
 FROM quay.io/containers/buildah:v1.39.0@sha256:02bf7089e6d7f52c3c5a0c058bd4d61ff440b01dfd22188309f96566cc494c8d AS buildah_containers
 FROM quay.io/buildah/stable:v1.39.0@sha256:85ad593f788870d76c4e0d37c42279d42416b7cad2c1577dd019c83ae04232fa AS buildah_stable
