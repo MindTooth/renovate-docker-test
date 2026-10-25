@@ -1,5 +1,5 @@
 # Blackbox Exporter fixture for Renovate version, digest, and changelog tests.
-FROM quay.io/prometheus/blackbox-exporter:v0.29.0@sha256:9613f2884689b6fad9f1939f6a3b0388c93a022cfaededb19545b329b5c83dea
+FROM quay.io/prometheus/blackbox-exporter:v0.29.1@sha256:ea1c7aa3ef3f307cd03e85f34abb604478ccb90b567fc690da0cd9776da76b13
 
 # Missing source metadata: Renovate cannot discover the ORAS changelog.
 FROM ghcr.io/oras-project/oras:v1.3.5 AS oras
